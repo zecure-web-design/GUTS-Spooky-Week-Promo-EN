@@ -1,5 +1,5 @@
 .calendar-content{
-    margin-top: 50px;
+    margin-top: 25px;
     padding: 25px;
 }
 .first-line-calendar{
@@ -23,5 +23,21 @@
     }
     .calendar-content{
         margin-top: 30px;
+    }
+}
+
+@media (max-width:1024px){
+    .first-line-calendar, .second-line-calendar{
+        max-width: 600px;
+        column-gap: 20px;
+    }
+}
+@media (max-width:475px) {
+    .calendar-content{
+        padding: 15px;
+    }
+    .first-line-calendar, .second-line-calendar{
+        max-width: 350px;
+        column-gap: 10px;
     }
 }

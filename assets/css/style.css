@@ -95,6 +95,7 @@ height: 116px;
 background-color: transparent;
 display: flex;
 z-index: 200;
+position: relative;
 }
 .header {
 position: absolute;
@@ -259,8 +260,16 @@ color: #ffffff;
 text-align: center;
 overflow: hidden;
 margin-top: -60px;
-background-color: #6416BC;
+background-image: linear-gradient(180deg, #54035f, #860968);
+/* background-color: #6416BC; */
 }
+
+#content-container{
+    position: relative;
+    z-index: 5;
+}
+
+
 .overlay-video{
 display: block;
 width: 100%;
@@ -361,6 +370,9 @@ font-weight: 600;
 text-transform: uppercase;
 }
 
+
+/* STEPS BOXES */
+
 .steps-container{
 display: flex;
 justify-content: center;
@@ -453,6 +465,7 @@ display: none;
 @media (max-width:2560px){
 .mainDiv{
   /* height: 1800px; */
+  margin-top: -100px;
 }
 .video-background{
   position: absolute;
@@ -476,7 +489,8 @@ display: none;
   justify-content: center;
 }
 #logo .pinata-logo{
-  width: 450px;
+  width: 500px;
+  margin-left: 60px;
 }
 #subtitle{
   position: relative;
@@ -486,20 +500,21 @@ display: none;
   justify-content: center;
 }
 #subtitle h3{
-  font-size: 48px;
-  line-height: 52px;
+  font-size: 40px;
+  line-height: 45px;
 }
 .play-button-container{
   position: relative;
   top: 0;
   padding: 0 0 0 0;
-  margin: 50px 0 0 -15vw;
+  margin: 40px 0 0 -15vw;
   justify-content: center;
   font-size: 1rem;
 }
 .how-it-works-container{
   position: relative;
   top: 0;
+  margin-top: 150px;
   /* margin: 9vw 0 0 0; */
 }
 .how-it-works-container h3{
@@ -596,7 +611,7 @@ display: none;
   position: relative;
   top: 0;
   padding: 0 0 0px 0;
-  margin: 40px 0 0px -15vw;
+  margin: 80px 0 0px -15vw;
   justify-content: center;
 }
 #logo .pinata-logo{
@@ -686,6 +701,9 @@ display: none;
 .video-background{
   height: 1300px;
 }
+#logo{
+  margin-top: 120px;
+}
 #logo .pinata-logo{
   width: 320px;
 }
@@ -695,6 +713,7 @@ display: none;
 }
 .how-it-works-container{
   /* margin: 7vw 0 0 0; */
+  margin-top: 80px;
 }
 
 }
@@ -758,7 +777,7 @@ display: none;
 
 }
 #logo .pinata-logo{
-  width: 225px;
+  width: 300px;
 }
 #subtitle{
   position: relative;
@@ -865,6 +884,12 @@ display: none;
   top: 40px;
   height: 1100px;
 }
+#content-container{
+  margin-top: -25px;
+}
+.how-it-works-container{
+  margin-top: 50px;
+}
 }
 
 /*MAX WIDTH 600PX */
@@ -873,6 +898,9 @@ display: none;
 
 .mainDiv{
   /* height: 1200px; */
+}
+#content-container{
+  margin-top: 0;
 }
 .video-background{
   position: absolute;
@@ -915,7 +943,7 @@ display: none;
   margin-top: 20px;
 }
 #logo .pinata-logo{
-  width: 200px;
+  width: 250px;
 }
 #subtitle{
   position: relative;
@@ -1090,6 +1118,9 @@ display: none;
 .mainDiv{
   /* height: 1200px; */
 }
+#logo{
+  margin-top: 0;
+}
 #video-bg-800{
   display: none;
 }
@@ -1097,7 +1128,7 @@ display: none;
   display: block;
 }
 #subtitle{
-  padding: 0 50px;
+  padding: 0 40px;
 }
 .play-button-container{
   margin-top: 30px;

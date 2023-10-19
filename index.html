@@ -6,6 +6,8 @@
     <!--STYLES-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/calendar-style.css">
+    <link rel="stylesheet" href="assets/css/backgrounds-style.css">
+    <link rel="stylesheet" href="assets/css/boxes-style.css">
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,8 +43,35 @@
         </div>
     </header>
     <!--Navigation menu ends-->
+    
     <!--Content starts-->
     <div class="mainDiv">
+        <div id="wizard-bg-container">
+            <img id="sceneBG_large" src="assets/images/banner/spooky-wizard-2560.png" alt="">
+            <img id="sceneBG_witch" src="assets/images/banner/witch-2560px.png" alt="">
+            <img id="sceneBG_medium" src="" alt="">
+            <img id="sceneBG_small" src="" alt="">
+
+
+            <div class="asset1b_pos">
+                <div class="asset_zoom_valentino">
+                    <img id="sceneBG_coins" src="assets/images/banner/spooky-coins-2560.png" alt="">
+                    <img id="sceneBG_coins_375px" src="assets/images/banner/spooky-coins-375.png" alt="">
+                </div>
+            </div>
+            <div class="asset2b_pos">
+                <div class="">
+                    <img id="sceneBG_confetti" src="assets/images/banner/spooky-confetti-2560.png" alt="">
+                    <img id="sceneBG_confetti_375px" src="assets/images/banner/spooky-confetti-375.png" alt="">
+                </div>
+            </div>
+            <div class="asset3b_pos">
+                <div class="asset_zoom_valentino">
+                    <img id="sceneBG_flying_assets" src="assets/images/banner/spooky-flying-assets-2560.png" alt="">
+                    <img id="sceneBG_flying_assets_375px" src="assets/images/banner/spooky-flying-assets-375.png" alt="">
+                </div>
+            </div>
+        </div>
         <!-- <div class="video-background">
             <video id="video-bg-1920" class="overlay-video" autoplay muted playsinline>
                 <source src="assets/images/banner/pinata-video-1920x1900px-resized.mp4" type="video/mp4">   
@@ -54,65 +83,110 @@
                 <source src="assets/images/banner/pinata-video-475x1200px-resized.mp4" type="video/mp4">   
             </video>
         </div>         -->
-        <div class="content-container">
+        <div id="content-container" class="content-container">
             <!--Top Section Starts-->
             <div id="logo">
-                <img class="pinata-logo" src="assets/images/banner/pinata-logo.png" alt="">
+                <img class="pinata-logo" src="assets/images/banner/spooky-logo.png" alt="">
             </div>     
             <div id="subtitle">
-                <h3><span class="orange">Crack Weekly Surprises.</span><br><span>Smash Monthly Bonuses.</span><h3>
+                <h3><span class="orange">Get Double Speed,<br> loads of Free Spin</span><br><span>Games of Guts, <br>and so much more</span><h3>
             </div>
             <div id="description">
                 <p class="desktop-18">Welcome to Guts Piñata Party, where the fun never stops!<br> Rules are simple: Beat, claim, repeat! </p>
             </div>
             <div class="play-button-container">
-                <a class="guts-button" href="">[[OPT IN]]</a>
+                <a class="guts-button" href="">Let's Play</a>
+            </div>
+            <!--Daily Offers Title-->
+            <div class="how-it-works-container">
+                <h3>Daily Offers:</h3>
             </div>
             <!--Calendar Start-->
             <div class="calendar-content">
+                
                 <div class="first-line-calendar">
                     <div class="calendar-img-container">
-                        <img src="assets/images/calendar/Icon-test.png" alt="">
+                        <a href="#october-26-box"><img src="assets/images/calendar/october-26.png" alt=""></a>
                     </div>
                     <div class="calendar-img-container">
-                        <img src="assets/images/calendar/Icon-test.png" alt="">
+                        <a href="#october-27-box"><img src="assets/images/calendar/october-27.png" alt=""></a>
                     </div>
                     <div class="calendar-img-container">
-                        <img src="assets/images/calendar/Icon-test.png" alt="">
+                        <a href="#october-28-box"><img src="assets/images/calendar/october-28.png" alt=""></a>
                     </div>
                     <div class="calendar-img-container">
-                        <img src="assets/images/calendar/Icon-test.png" alt="">
+                        <a href="#october-29-box"><img src="assets/images/calendar/october-29.png" alt=""></a>
                     </div>
                 </div>
                 <div class="second-line-calendar">
                     <div class="calendar-img-container">
-                        <img src="assets/images/calendar/Icon-test.png" alt="">
+                        <a href="#october-30-box"><img src="assets/images/calendar/october-30.png" alt=""></a>
                     </div>
                     <div class="calendar-img-container">
-                        <img src="assets/images/calendar/Icon-test.png" alt="">
+                        <a href="#october-31-box"><img src="assets/images/calendar/october-31.png" alt=""></a>
                     </div>
                     <div class="calendar-img-container">
-                        <img src="assets/images/calendar/Icon-test.png" alt="">
+                        <a href="#november-01-box"><img src="assets/images/calendar/november-01.png" alt=""></a>
                     </div>
                     <div class="calendar-img-container">
-                        <img src="assets/images/calendar/Icon-test.png" alt="">
+                        <a href="#november-02-box"><img src="assets/images/calendar/november-02.png" alt=""></a>
                     </div>
                 </div>
             </div>
 
             <!--Cards Start-->
-            <div class="how-it-works-container">
-                <h3>Here's how it works:</h3>
-            </div>
+            
             <div class="steps-container">
-                <div class="step-single-container-01">
+                <div id="october-26-box" class="step-single-container-01">
                     <h3>Weekly Surprises</h3>
                     <ul>
                         <li>Opt in and wager €100 from Monday to Thursday</li>
                         <li>Surprises are paid out on Sunday</li>
                     </ul>       
                 </div>
-                <div class="step-single-container-02">
+                <div id="october-27-box" class="step-single-container-02">
+                    <h3>Monthly Bonuses</h3>
+                    <ul>
+                        <li>Collect at least 3 Weekly Piñata Rewards</li>
+                        <li>Start the next month with a Reload Bonus</li>
+                    </ul>       
+                </div>
+                <div id="october-28-box" class="step-single-container-01">
+                    <h3>Weekly Surprises</h3>
+                    <ul>
+                        <li>Opt in and wager €100 from Monday to Thursday</li>
+                        <li>Surprises are paid out on Sunday</li>
+                    </ul>       
+                </div>
+                <div id="october-29-box" class="step-single-container-02">
+                    <h3>Monthly Bonuses</h3>
+                    <ul>
+                        <li>Collect at least 3 Weekly Piñata Rewards</li>
+                        <li>Start the next month with a Reload Bonus</li>
+                    </ul>       
+                </div>
+                <div id="october-30-box" class="step-single-container-01">
+                    <h3>Weekly Surprises</h3>
+                    <ul>
+                        <li>Opt in and wager €100 from Monday to Thursday</li>
+                        <li>Surprises are paid out on Sunday</li>
+                    </ul>       
+                </div>
+                <div id="october-31-box" class="step-single-container-02">
+                    <h3>Monthly Bonuses</h3>
+                    <ul>
+                        <li>Collect at least 3 Weekly Piñata Rewards</li>
+                        <li>Start the next month with a Reload Bonus</li>
+                    </ul>       
+                </div>
+                <div id="november-01-box" class="step-single-container-01">
+                    <h3>Weekly Surprises</h3>
+                    <ul>
+                        <li>Opt in and wager €100 from Monday to Thursday</li>
+                        <li>Surprises are paid out on Sunday</li>
+                    </ul>       
+                </div>
+                <div id="november-02-box" class="step-single-container-02">
                     <h3>Monthly Bonuses</h3>
                     <ul>
                         <li>Collect at least 3 Weekly Piñata Rewards</li>
@@ -121,7 +195,7 @@
                 </div>
             </div>
             <div class="dont-miss-the-fun-container">
-                <h3>Don't miss the fun, take a good swing!</h3>
+                <!-- <h3>Don't miss the fun, take a good swing!</h3> -->
             </div>
         </div>
     </div>

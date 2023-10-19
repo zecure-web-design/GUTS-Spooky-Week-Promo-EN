@@ -1,0 +1,331 @@
+.steps-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 43vw;
+    flex-direction: column;
+    }
+    
+    .step-single-container-01{
+    background: url(../images/steps/step-01-bg-potion.png);
+    background-size: cover;
+    background-position: center center;
+    width: 42vw;
+    height: 13vw;
+    }
+    .step-single-container-01 h3{
+    font-size: 1.5vw;
+    line-height: 2vw;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-left: 15vw;
+    padding-top: 3.5vw;
+    text-align: left;
+    color: #000000;
+    }
+    .step-single-container-01 ul{
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15vw;
+    padding-right: 0;
+    padding-top: 1vw;
+    font-size: 1vw;
+    text-align: left;
+    color: #000000;
+    }
+
+    .step-single-container-02{
+      background: url(../images/steps/step-02-bg-potion.png);
+      background-size: cover;
+      background-position: center center;
+      width: 42vw;
+      height: 13vw;
+      }
+      .step-single-container-02 h3{
+      font-size: 1.5vw;
+      line-height: 2vw;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding-left: 6vw;
+      padding-top: 3.5vw;
+      text-align: left;
+      color: #000000;
+      }
+      .step-single-container-02 ul{
+      list-style-type: disc;
+      display: flex;
+      flex-direction: column;
+      padding-left: 6vw;
+      padding-right: 15vw;
+      padding-top: 1vw;
+      font-size: 1vw;
+      text-align: left;
+      color: #000000;
+      }
+
+/* RESPONSIVE */
+
+    /* MAX WIDTH 2560 PX */
+@media (max-width:2560px) {
+    .steps-container{
+        position: relative;
+        top: 0;
+        margin: 25px auto;
+      }
+      .step-single-container-01{
+        margin: 0 auto;
+        width: 900px;
+        height: 290px;
+      }
+      .step-single-container-01 h3{
+        font-size: 30px;
+        line-height: 34px;
+        padding-left: 220px;
+        padding-top: 85px;
+      }
+      .step-single-container-01 ul{
+        font-size: 24px;
+        line-height: 32px;
+        padding: 20px 0px 0 220px;
+      }
+
+      .step-single-container-02{
+        margin: 0 auto;
+        width: 900px;
+        height: 290px;
+      }
+      .step-single-container-02 h3{
+        font-size: 30px;
+        line-height: 34px;
+        padding-left: 220px;
+        padding-top: 85px;
+      }
+      .step-single-container-02 ul{
+        font-size: 24px;
+        line-height: 32px;
+        padding: 20px 0px 0 220px;
+      }
+}
+
+/* MAX WIDTH 1920PX */
+
+@media (max-width:1920px) {
+    .steps-container{
+        position: relative;
+        top: 0;
+        margin: 20px auto;
+      }
+      .step-single-container-01{
+        margin: 0 auto;
+        width: 806px;
+        height: 250px;
+      }
+      .step-single-container-01 h3{
+        font-size: 26px;
+        line-height: 30px;
+        padding-left: 220px;
+        padding-top: 70px;
+      }
+      .step-single-container-01 ul{
+        font-size: 20px;
+        line-height: 26px;
+        padding: 20px 0px 0 220px;
+      }
+
+      .step-single-container-02{
+        margin: 0 auto;
+        width: 806px;
+        height: 250px;
+      }
+      .step-single-container-02 h3{
+        font-size: 26px;
+        line-height: 30px;
+        padding-left: 220px;
+        padding-top: 70px;
+      }
+      .step-single-container-02 ul{
+        font-size: 20px;
+        line-height: 26px;
+        padding: 20px 0px 0 220px;
+      }
+}
+
+/* MAX WIDTH 1300PX */
+
+@media (max-width:1300px){
+    .steps-container{
+        position: relative;
+        top: 0;
+        margin: 20px auto;
+      }
+      .step-single-container-01{
+        width: 550px;
+        height: 250px;
+        margin: 0 auto;
+        background: url(../images/steps/step-01-bg-1200px-potion.png);
+        background-size: cover;
+      }
+      .step-single-container-01 h3{
+        font-size: 18px;
+        line-height: 22px;
+        padding-top: 75px;
+        padding-left: 180px;
+      }
+      .step-single-container-01 ul{
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 180px;
+        padding-top: 15px;
+        padding-right: 40px;
+      }
+
+      .step-single-container-02{
+        width: 550px;
+        height: 250px;
+        margin: 0 auto;
+        background: url(../images/steps/step-02-bg-1200px-potion.png);
+        background-size: cover;
+      }
+      .step-single-container-02 h3{
+        font-size: 18px;
+        line-height: 22px;
+        padding-top: 75px;
+        padding-left: 100px;
+      }
+      .step-single-container-02 ul{
+        font-size: 16px;
+        line-height: 20px;
+        padding-left: 100px;
+        padding-top: 15px;
+        padding-right: 150px;
+      }
+}
+
+/* MAX WIDTH 768 */
+
+@media (max-width:768px){
+  .steps-container{
+    margin-top: 0;
+  }
+  .step-single-container-01, .step-single-container-02{
+    margin-top: -40px;
+  }
+}
+
+/* MAX WIDTH 600PX */
+
+@media (max-width:600px) {
+    .steps-container{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateX(0);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+      }
+      .step-single-container-01{
+        background: url(../images/steps/step-01-bg-600px-breakpoint-potion.png);
+        background-size: cover;
+        background-position: center center;
+        width: 450px;
+        height: 170px;
+      }
+      .step-single-container-01 h3{
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding-left: 100px;
+        padding-top: 35px;
+        text-align: left;
+      }
+      .step-single-container-01 ul{
+        list-style-type: disc;
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+        padding-right: 20px;
+        padding-top: 10px;
+        font-size: 16px;
+        text-align: left;
+      }
+
+      .step-single-container-02{
+        background: url(../images/steps/step-02-bg-600px-breakpoint-potion.png);
+        background-size: cover;
+        background-position: center center;
+        width: 450px;
+        height: 170px;
+      }
+      .step-single-container-02 h3{
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding-left: 70px;
+        padding-top: 45px;
+        text-align: left;
+      }
+      .step-single-container-02 ul{
+        list-style-type: disc;
+        display: flex;
+        flex-direction: column;
+        padding-left: 70px;
+        padding-right: 80px;
+        padding-top: 10px;
+        font-size: 16px;
+        text-align: left;
+      }
+      .step-single-container-01, .step-single-container-02{
+        margin-top: 0;
+      }
+}
+
+
+/* MAX WIDTH 475PX */
+
+@media (max-width:475px) {
+    .steps-container{
+        margin-top: 0;
+      }
+      .step-single-container-01{
+        width: 350px;
+        height: 200px;
+        background: url(../images/steps/step-01-bg-475px-potion.png);
+        background-size: cover;
+        background-position: center center;
+      }
+      .step-single-container-01 h3{
+        padding-top: 45px;
+      }
+      .step-single-container-01 ul{
+        padding-right: 30px;
+      }
+
+      .step-single-container-02{
+        width: 350px;
+        height: 200px;
+        background: url(../images/steps/step-02-bg-475px-potion.png);
+        background-size: cover;
+        background-position: center center;
+      }
+      .step-single-container-02 h3{
+        padding-left: 60px;
+        padding-top: 45px;
+      }
+      .step-single-container-02 ul{
+        padding-left: 60px;
+        padding-right: 70px;
+      }
+      .dont-miss-the-fun-container{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding: 0 70px;
+      }
+}
