@@ -35,6 +35,7 @@
 @media (max-width:475px) {
     .calendar-content{
         padding: 15px;
+        margin-top: 15px;
     }
     .first-line-calendar, .second-line-calendar{
         max-width: 350px;

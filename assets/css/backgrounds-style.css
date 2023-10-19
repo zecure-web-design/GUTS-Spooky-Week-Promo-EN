@@ -13,7 +13,7 @@
 }
 
 
-#sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBg_confetti, #sceneBG_flying_assets{
+#sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBg_confetti, #sceneBG_flying_assets, #sceneBG_witch_375px{
     max-width:unset;
     height: auto;
     position: absolute;
@@ -29,16 +29,7 @@
     height: auto;
 }
 
-#sceneBG_large{
-    display: none;
-}
-#sceneBG_confetti_375px{
-    display: none;
-}
-#sceneBG_coins_375px{
-    display: none;
-}
-#sceneBG_flying_assets_375px{
+#sceneBG_large, #sceneBG_confetti_375px, #sceneBG_coins_375px, #sceneBG_flying_assets_375px, #sceneBG_witch_375px{
     display: none;
 }
 
@@ -149,6 +140,9 @@
 }
 
 @media (max-width:475px) {
+    #wizard-bg-container{
+        top: 0;
+    }
     #sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
         display: none;
     }
@@ -159,10 +153,24 @@
     #sceneBG_coins_375px{
         width: 475px;
         margin-top: -50px;
+        display: none;
     }
     #sceneBG_flying_assets_375px{
         width: 475px;
         margin-top: -50px;
+        display: none;
+    }
+    #sceneBG_witch{
+        display: none;
+        margin-top: 620px;
+        margin-left: 0;
+        width: 950px;
+    }
+    #sceneBG_witch_375px{
+        display: block;
+        margin-top: 560px;
+        width: 950px;
+        margin-left: -30px;
     }
 }
 

@@ -1116,10 +1116,13 @@ display: none;
 
 /*CONTENT*/
 .mainDiv{
-  /* height: 1200px; */
+  /* height: 2500px !important;  */
 }
 #logo{
   margin-top: 0;
+}
+#logo .pinata-logo{
+  margin-left: 30px;
 }
 #video-bg-800{
   display: none;
@@ -1130,11 +1133,15 @@ display: none;
 #subtitle{
   padding: 0 40px;
 }
+#subtitle h3{
+  font-size: 25px;
+  line-height: 30px;
+}
 .play-button-container{
   margin-top: 30px;
 }
 .how-it-works-container{
-  /* margin-top: 30px; */
+  margin-top: 30px;
 }
 .steps-container{
   margin-top: 40px;
