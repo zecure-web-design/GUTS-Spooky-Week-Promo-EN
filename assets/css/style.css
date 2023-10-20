@@ -461,6 +461,70 @@ display: none;
 
 /* MEDIA QUERIES */
 
+/* MIN WIDTH 2561 */
+
+@media (min-width:2561px) {
+  .mainDiv{
+    margin-top: -100px;
+  }
+  .content-container{
+    z-index: 10;
+  }
+  #logo{
+    position: relative;
+    top: 0;
+    padding: 0 0 0px 0;
+    margin: 120px 0 0px -15vw;
+    justify-content: center;
+  }
+  #logo .pinata-logo{
+    width: 500px;
+    margin-left: 60px;
+  }
+  #subtitle{
+    position: relative;
+    top: 0;
+    padding: 0 0 0 0;
+    margin: 40px 0 0 -15vw;
+    justify-content: center;
+  }
+  #subtitle h3{
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .play-button-container{
+    position: relative;
+    top: 0;
+    padding: 0 0 0 0;
+    margin: 40px 0 0 -15vw;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .how-it-works-container{
+    position: relative;
+    top: 0;
+    margin-top: 150px;
+    /* margin: 9vw 0 0 0; */
+  }
+  .how-it-works-container h3{
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .dont-miss-the-fun-container{
+    position: relative;
+    top: 0;
+    /* padding: 0 0 50px 0; */
+    height: 310px;
+    background: url(../images/banner/dracula-2560.png) center bottom;
+    background-repeat: no-repeat;
+  }
+  .dont-miss-the-fun-container h3{
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+
 /*MAX WIDTH 2560PX*/
 @media (max-width:2560px){
 .mainDiv{

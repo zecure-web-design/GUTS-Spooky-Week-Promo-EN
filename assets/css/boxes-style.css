@@ -1,3 +1,11 @@
+a.box-link {
+  text-decoration: underline;
+  color: #2B69D5;
+}
+a.box-link:hover{
+  text-decoration: none;
+  color: #676767;
+}
 .steps-container{
     display: flex;
     justify-content: center;
@@ -157,6 +165,60 @@
       }
 
 /* RESPONSIVE */
+
+/* MIN WIDTH 2561PX */
+
+@media (min-width:2561px){
+  .steps-container{
+    position: relative;
+    top: 0;
+    margin: 25px auto;
+  }
+  .steps-odd{
+    margin: 0 auto;
+    width: 900px;
+    height: 290px;
+  }
+  .steps-odd h3.date-title{
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 220px;
+    padding-top: 70px;
+  }
+  .steps-odd h3{
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 220px;
+    /* padding-top: 85px; */
+  }
+  .steps-odd ul{
+    font-size: 24px;
+    line-height: 32px;
+    padding: 20px 0px 0 220px;
+  }
+  .steps-even{
+    margin: 0 auto;
+    width: 900px;
+    height: 290px;
+  }
+  .steps-even h3.date-title{
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 220px;
+    padding-top: 70px;
+  }
+  .steps-even h3{
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 220px;
+    /* padding-top: 85px; */
+  }
+  .steps-even ul{
+    font-size: 24px;
+    line-height: 32px;
+    padding: 20px 0px 0 220px;
+  }
+}
 
     /* MAX WIDTH 2560 PX */
 @media (max-width:2560px) {
