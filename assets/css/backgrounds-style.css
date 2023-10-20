@@ -29,7 +29,7 @@
     height: auto;
 }
 
-#sceneBG_large, #sceneBG_confetti_375px, #sceneBG_coins_375px, #sceneBG_flying_assets_375px, #sceneBG_witch_375px{
+#sceneBG_large, #sceneBG_confetti_375px, #sceneBG_coins_375px, #sceneBG_flying_assets_375px, #sceneBG_witch_375px, #sceneBG_confetti_600px, #sceneBG_confetti_1280px{
     display: none;
 }
 
@@ -69,6 +69,9 @@
     #sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
         width: 1920px;
     }
+    #sceneBG_confetti{
+        width: 2100px;
+    }
 }
 
 @media (max-width:1600px){
@@ -78,6 +81,9 @@
     #sceneBG_witch{
         margin-top: 40px;
     }
+    #sceneBG_confetti{
+        width: 1920px;
+    }
 }
 
 @media (max-width:1280px) {
@@ -85,7 +91,16 @@
         width: 1500px;
         margin-top: -40px;
     }
-    
+    #sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
+        width: 1280px;
+    }
+    #sceneBG_confetti{
+        display: none;
+    }
+    #sceneBG_confetti_1280px{
+        display: block;
+        width: 1280px;
+    }
 }
 
 @media (max-width:1024px) {
@@ -94,6 +109,14 @@
     }
     #sceneBG_witch{
         width: 1500px;
+    }
+    #sceneBG_confetti{
+        display: none;
+        width: 1100px;
+    }
+    #sceneBG_confetti_600px{
+        display: none;
+        width: 800px;
     }
 }
 
@@ -110,9 +133,18 @@
         width: 950px;
         margin-top: -30px;
     }
+
+    #sceneBG_confetti_600px{
+        display: block;
+        width: 700px;
+    }
     #sceneBG_confetti{
         width: 850px;
         margin-top: -70px;
+        display: none;
+    }
+    #sceneBG_confetti_1280px{
+        display: none;
     }
     #sceneBG_flying_assets{
         width: 850px;
@@ -124,7 +156,7 @@
     #sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
         display: none;
     }
-    #sceneBG_confetti_375px{
+    #sceneBG_confetti_600px{
         display: block;
         width: 600px;
     }
@@ -143,7 +175,7 @@
     #wizard-bg-container{
         top: 0;
     }
-    #sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
+    #sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets, #sceneBG_confetti_600px{
         display: none;
     }
     #sceneBG_confetti_375px{

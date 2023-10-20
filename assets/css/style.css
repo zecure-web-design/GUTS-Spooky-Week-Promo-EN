@@ -561,7 +561,10 @@ display: none;
 .dont-miss-the-fun-container{
   position: relative;
   top: 0;
-  padding: 0 0 50px 0;
+  /* padding: 0 0 50px 0; */
+  height: 310px;
+  background: url(../images/banner/dracula-2560.png) center bottom;
+  background-repeat: no-repeat;
 }
 .dont-miss-the-fun-container h3{
   font-size: 40px;
@@ -625,8 +628,8 @@ display: none;
   justify-content: center;
 }
 #subtitle h3{
-  font-size: 40px;
-  line-height: 44px;
+  font-size: 35px;
+  line-height: 40px;
 }
 .play-button-container{
   position: relative;
@@ -859,10 +862,15 @@ display: none;
   position: relative;
   top: 0;
   padding: 0 0 50px 0;
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  height: 150px;
 }
+
 .dont-miss-the-fun-container h3{
   font-size: 20px;
   line-height: 24px;
+
 }
 
 }
@@ -889,6 +897,11 @@ display: none;
 }
 .how-it-works-container{
   margin-top: 50px;
+}
+.dont-miss-the-fun-container{
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  height: 150px;
 }
 }
 
@@ -1081,7 +1094,11 @@ display: none;
   flex-direction: row;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  height: 100px;
+  background-size: 1000px;
+  background-repeat: no-repeat;
+
 }
 .dont-miss-the-fun-container h3{
   font-size: 20px;
@@ -1176,7 +1193,10 @@ display: none;
 }
 .dont-miss-the-fun-container{
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   padding: 0 70px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 1000px;
 }
 }

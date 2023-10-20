@@ -7,7 +7,31 @@
     top: 43vw;
     flex-direction: column;
     }
-    
+#october-26-box h3.date-title{
+  color: #c12dba;
+}
+#october-27-box h3.date-title{
+  color: #e54885;
+}
+#october-28-box h3.date-title{
+  color: #a22edf;
+}
+#october-29-box h3.date-title{
+  color: #0e70d5;
+}
+#october-30-box h3.date-title{
+  color: #0ceed9;
+}
+#october-31-box h3.date-title{
+  color: #f6ad00;
+}
+#november-01-box h3.date-title{
+  color: #94ca1e;
+}
+#november-02-box h3.date-title{
+  color: #b9d31c;
+}
+
     .step-single-container-01{
     background: url(../images/steps/step-01-bg-potion.png);
     background-size: cover;
@@ -15,17 +39,50 @@
     width: 42vw;
     height: 13vw;
     }
-    .step-single-container-01 h3{
+  .step-single-container-03{
+    background: url(../images/steps/step-03-bg-potion.png);
+    background-size: cover;
+    background-position: center center;
+    width: 42vw;
+    height: 13vw;
+    }
+  .step-single-container-05{
+    background: url(../images/steps/step-05-bg-potion.png);
+    background-size: cover;
+    background-position: center center;
+    width: 42vw;
+    height: 13vw;
+    }
+  .step-single-container-07{
+    background: url(../images/steps/step-07-bg-potion.png);
+    background-size: cover;
+    background-position: center center;
+    width: 42vw;
+    height: 13vw;
+    }
+    .steps-odd h3.date-title{
+      font-size: 1.5vw;
+      line-height: 2vw;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding-left: 15vw;
+      padding-top: 3.5vw;
+      text-align: left;
+      color: #000000;
+      }
+
+    .steps-odd h3{
     font-size: 1.5vw;
     line-height: 2vw;
     font-weight: 600;
     text-transform: capitalize;
     padding-left: 15vw;
-    padding-top: 3.5vw;
+    /* padding-top: 3.5vw; */
+    padding-top: 0;
     text-align: left;
     color: #000000;
     }
-    .step-single-container-01 ul{
+    .steps-odd ul{
     list-style-type: disc;
     display: flex;
     flex-direction: column;
@@ -44,17 +101,50 @@
       width: 42vw;
       height: 13vw;
       }
-      .step-single-container-02 h3{
+    .step-single-container-04{
+      background: url(../images/steps/step-04-bg-potion.png);
+      background-size: cover;
+      background-position: center center;
+      width: 42vw;
+      height: 13vw;
+      }
+    .step-single-container-06{
+      background: url(../images/steps/step-06-bg-potion.png);
+      background-size: cover;
+      background-position: center center;
+      width: 42vw;
+      height: 13vw;
+      }
+    .step-single-container-08{
+      background: url(../images/steps/step-08-bg-potion.png);
+      background-size: cover;
+      background-position: center center;
+      width: 42vw;
+      height: 13vw;
+      }
+
+      .steps-even h3.date-title{
+        font-size: 1.5vw;
+        line-height: 2vw;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding-left: 6vw;
+        padding-top: 3.5vw;
+        text-align: left;
+        color: #000000;
+        }
+    .steps-even h3{
       font-size: 1.5vw;
       line-height: 2vw;
       font-weight: 600;
       text-transform: capitalize;
       padding-left: 6vw;
-      padding-top: 3.5vw;
+      /* padding-top: 3.5vw; */
+      padding-top: 0;
       text-align: left;
       color: #000000;
       }
-      .step-single-container-02 ul{
+    .steps-even ul{
       list-style-type: disc;
       display: flex;
       flex-direction: column;
@@ -75,35 +165,47 @@
         top: 0;
         margin: 25px auto;
       }
-      .step-single-container-01{
+      .steps-odd{
         margin: 0 auto;
         width: 900px;
         height: 290px;
       }
-      .step-single-container-01 h3{
+      .steps-odd h3.date-title{
         font-size: 30px;
         line-height: 34px;
         padding-left: 220px;
-        padding-top: 85px;
+        padding-top: 70px;
       }
-      .step-single-container-01 ul{
+      .steps-odd h3{
+        font-size: 30px;
+        line-height: 34px;
+        padding-left: 220px;
+        /* padding-top: 85px; */
+      }
+      .steps-odd ul{
         font-size: 24px;
         line-height: 32px;
         padding: 20px 0px 0 220px;
       }
 
-      .step-single-container-02{
+      .steps-even{
         margin: 0 auto;
         width: 900px;
         height: 290px;
       }
-      .step-single-container-02 h3{
+      .steps-even h3.date-title{
         font-size: 30px;
         line-height: 34px;
         padding-left: 220px;
-        padding-top: 85px;
+        padding-top: 70px;
       }
-      .step-single-container-02 ul{
+      .steps-even h3{
+        font-size: 30px;
+        line-height: 34px;
+        padding-left: 220px;
+        /* padding-top: 85px; */
+      }
+      .steps-even ul{
         font-size: 24px;
         line-height: 32px;
         padding: 20px 0px 0 220px;
@@ -118,35 +220,47 @@
         top: 0;
         margin: 20px auto;
       }
-      .step-single-container-01{
+      .steps-odd{
         margin: 0 auto;
         width: 806px;
         height: 250px;
       }
-      .step-single-container-01 h3{
+      .steps-odd h3.date-title{
         font-size: 26px;
         line-height: 30px;
         padding-left: 220px;
-        padding-top: 70px;
+        padding-top: 60px;
       }
-      .step-single-container-01 ul{
+      .steps-odd h3{
+        font-size: 26px;
+        line-height: 30px;
+        padding-left: 220px;
+        /* padding-top: 70px; */
+      }
+      .steps-odd ul{
         font-size: 20px;
         line-height: 26px;
         padding: 20px 0px 0 220px;
       }
 
-      .step-single-container-02{
+      .steps-even{
         margin: 0 auto;
         width: 806px;
         height: 250px;
       }
-      .step-single-container-02 h3{
+      .steps-even h3.date-title{
         font-size: 26px;
         line-height: 30px;
         padding-left: 220px;
-        padding-top: 70px;
+        padding-top: 60px;
       }
-      .step-single-container-02 ul{
+      .steps-even h3{
+        font-size: 26px;
+        line-height: 30px;
+        padding-left: 220px;
+        /* padding-top: 70px; */
+      }
+      .steps-even ul{
         font-size: 20px;
         line-height: 26px;
         padding: 20px 0px 0 220px;
@@ -168,13 +282,40 @@
         background: url(../images/steps/step-01-bg-1200px-potion.png);
         background-size: cover;
       }
-      .step-single-container-01 h3{
+      .step-single-container-03{
+        width: 550px;
+        height: 250px;
+        margin: 0 auto;
+        background: url(../images/steps/step-03-bg-1200px-potion.png);
+        background-size: cover;
+      }
+      .step-single-container-05{
+        width: 550px;
+        height: 250px;
+        margin: 0 auto;
+        background: url(../images/steps/step-05-bg-1200px-potion.png);
+        background-size: cover;
+      }
+      .step-single-container-07{
+        width: 550px;
+        height: 250px;
+        margin: 0 auto;
+        background: url(../images/steps/step-07-bg-1200px-potion.png);
+        background-size: cover;
+      }
+      .steps-odd h3.date-title{
         font-size: 18px;
         line-height: 22px;
-        padding-top: 75px;
+        padding-top: 65px;
         padding-left: 180px;
       }
-      .step-single-container-01 ul{
+      .steps-odd h3{
+        font-size: 18px;
+        line-height: 22px;
+        /* padding-top: 75px; */
+        padding-left: 180px;
+      }
+      .steps-odd ul{
         font-size: 16px;
         line-height: 20px;
         padding-left: 180px;
@@ -189,13 +330,40 @@
         background: url(../images/steps/step-02-bg-1200px-potion.png);
         background-size: cover;
       }
-      .step-single-container-02 h3{
+      .step-single-container-04{
+        width: 550px;
+        height: 250px;
+        margin: 0 auto;
+        background: url(../images/steps/step-04-bg-1200px-potion.png);
+        background-size: cover;
+      }
+      .step-single-container-06{
+        width: 550px;
+        height: 250px;
+        margin: 0 auto;
+        background: url(../images/steps/step-06-bg-1200px-potion.png);
+        background-size: cover;
+      }
+      .step-single-container-08{
+        width: 550px;
+        height: 250px;
+        margin: 0 auto;
+        background: url(../images/steps/step-08-bg-1200px-potion.png);
+        background-size: cover;
+      }
+      .steps-even h3.date-title{
         font-size: 18px;
         line-height: 22px;
-        padding-top: 75px;
+        padding-top: 65px;
         padding-left: 100px;
       }
-      .step-single-container-02 ul{
+      .steps-even h3{
+        font-size: 18px;
+        line-height: 22px;
+        /* padding-top: 75px; */
+        padding-left: 100px;
+      }
+      .steps-even ul{
         font-size: 16px;
         line-height: 20px;
         padding-left: 100px;
@@ -210,7 +378,7 @@
   .steps-container{
     margin-top: 0;
   }
-  .step-single-container-01, .step-single-container-02{
+  .steps-odd, .steps-even{
     margin-top: -40px;
   }
 }
@@ -236,7 +404,28 @@
         width: 450px;
         height: 170px;
       }
-      .step-single-container-01 h3{
+      .step-single-container-03{
+        background: url(../images/steps/step-03-bg-600px-breakpoint-potion.png);
+        background-size: cover;
+        background-position: center center;
+        width: 450px;
+        height: 170px;
+      }
+      .step-single-container-05{
+        background: url(../images/steps/step-05-bg-600px-breakpoint-potion.png);
+        background-size: cover;
+        background-position: center center;
+        width: 450px;
+        height: 170px;
+      }
+      .step-single-container-07{
+        background: url(../images/steps/step-07-bg-600px-breakpoint-potion.png);
+        background-size: cover;
+        background-position: center center;
+        width: 450px;
+        height: 170px;
+      }
+      .steps-odd h3.date-title{
         font-size: 18px;
         line-height: 20px;
         font-weight: 600;
@@ -245,7 +434,16 @@
         padding-top: 35px;
         text-align: left;
       }
-      .step-single-container-01 ul{
+      .steps-odd h3{
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding-left: 100px;
+        /* padding-top: 35px; */
+        text-align: left;
+      }
+      .steps-odd ul{
         list-style-type: disc;
         display: flex;
         flex-direction: column;
@@ -263,16 +461,46 @@
         width: 450px;
         height: 170px;
       }
-      .step-single-container-02 h3{
+      .step-single-container-04{
+        background: url(../images/steps/step-04-bg-600px-breakpoint-potion.png);
+        background-size: cover;
+        background-position: center center;
+        width: 450px;
+        height: 170px;
+      }
+      .step-single-container-06{
+        background: url(../images/steps/step-06-bg-600px-breakpoint-potion.png);
+        background-size: cover;
+        background-position: center center;
+        width: 450px;
+        height: 170px;
+      }
+      .step-single-container-08{
+        background:x url(../images/steps/step-08-bg-600px-breakpoint-potion.png);
+        background-size: cover;
+        background-position: center center;
+        width: 450px;
+        height: 170px;
+      }
+      .steps-even h3.date-title{
         font-size: 18px;
         line-height: 20px;
         font-weight: 600;
         text-transform: capitalize;
         padding-left: 70px;
-        padding-top: 45px;
+        padding-top: 35px;
         text-align: left;
       }
-      .step-single-container-02 ul{
+      .steps-even h3{
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding-left: 70px;
+        /* padding-top: 45px; */
+        text-align: left;
+      }
+      .steps-even ul{
         list-style-type: disc;
         display: flex;
         flex-direction: column;
@@ -282,9 +510,10 @@
         font-size: 16px;
         text-align: left;
       }
-      .step-single-container-01, .step-single-container-02{
+      .steps-odd, .steps-even{
         margin-top: 0;
       }
+      
 }
 
 
@@ -301,13 +530,36 @@
         background-size: cover;
         background-position: center center;
       }
-      .step-single-container-01 h3{
-        padding-top: 45px;
+      .step-single-container-03{
+        width: 350px;
+        height: 200px;
+        background: url(../images/steps/step-03-bg-475px-potion.png);
+        background-size: cover;
+        background-position: center center;
       }
-      .step-single-container-01 ul{
+      .step-single-container-05{
+        width: 350px;
+        height: 200px;
+        background: url(../images/steps/step-05-bg-475px-potion.png);
+        background-size: cover;
+        background-position: center center;
+      }
+      .step-single-container-07{
+        width: 350px;
+        height: 200px;
+        background: url(../images/steps/step-07-bg-475px-potion.png);
+        background-size: cover;
+        background-position: center center;
+      }
+      .steps-odd h3.date-title{
+        padding-top: 35px;
+      }
+      .steps-odd h3{
+        /* padding-top: 45px; */
+      }
+      .steps-odd ul{
         padding-right: 30px;
       }
-
       .step-single-container-02{
         width: 350px;
         height: 200px;
@@ -315,17 +567,37 @@
         background-size: cover;
         background-position: center center;
       }
-      .step-single-container-02 h3{
-        padding-left: 60px;
-        padding-top: 45px;
+      .step-single-container-04{
+        width: 350px;
+        height: 200px;
+        background: url(../images/steps/step-04-bg-475px-potion.png);
+        background-size: cover;
+        background-position: center center;
       }
-      .step-single-container-02 ul{
+      .step-single-container-06{
+        width: 350px;
+        height: 200px;
+        background: url(../images/steps/step-06-bg-475px-potion.png);
+        background-size: cover;
+        background-position: center center;
+      }
+      .step-single-container-08{
+        width: 350px;
+        height: 200px;
+        background: url(../images/steps/step-08-bg-475px-potion.png);
+        background-size: cover;
+        background-position: center center;
+      }
+      .steps-even h3.date-title{
+        padding-left: 60px;
+        padding-top: 35px;
+      }
+      .steps-even h3{
+        padding-left: 60px;
+        /* padding-top: 45px; */
+      }
+      .steps-even ul{
         padding-left: 60px;
         padding-right: 70px;
-      }
-      .dont-miss-the-fun-container{
-        margin-top: 20px;
-        margin-bottom: 30px;
-        padding: 0 70px;
       }
 }
