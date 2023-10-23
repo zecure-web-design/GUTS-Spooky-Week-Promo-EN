@@ -520,7 +520,7 @@ a.box-link:hover{
   color: #0e70d5;
 }
 #october-30-box h3.date-title{
-  color: #0ceed9;
+  color: #23796e;
 }
 #october-31-box h3.date-title{
   color: #f6ad00;
@@ -786,8 +786,8 @@ display: none;
     justify-content: center;
   }
   #subtitle h3{
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 45px;
+    line-height: 50px;
   }
   .play-button-container{
     position: relative;
@@ -923,8 +923,8 @@ display: none;
   justify-content: center;
 }
 #subtitle h3{
-  font-size: 40px;
-  line-height: 45px;
+  font-size: 45px;
+  line-height: 50px;
 }
 .play-button-container{
   position: relative;
