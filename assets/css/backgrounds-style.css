@@ -11,8 +11,6 @@
     pointer-events:none;
     z-index: 0;
 }
-
-
 #sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBg_confetti, #sceneBG_flying_assets, #sceneBG_witch_375px{
     max-width:unset;
     height: auto;
@@ -23,16 +21,13 @@
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-
 #sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
     width: 2560px;
     height: auto;
 }
-
 #sceneBG_large, #sceneBG_confetti_375px, #sceneBG_coins_375px, #sceneBG_flying_assets_375px, #sceneBG_witch_375px, #sceneBG_confetti_600px, #sceneBG_confetti_1280px{
     display: none;
 }
-
 .asset1b_pos, .asset2b_pos, .asset3b_pos{
     position: absolute;
     left: 50%;
@@ -51,6 +46,63 @@
 .asset2b_pos{
     z-index: 0;
 }
+
+/* ANIMATIONS */
+
+
+.asset1b_pos .asset_zoom{-webkit-animation-delay:-.5s;animation-delay:-.5s;}
+
+.asset1b_pos .asset_zoom_valentino{-webkit-animation-delay:-.5s;animation-delay:-.5s;}
+.asset2b_pos .asset_zoom_valentino{-webkit-animation-delay:-1s;animation-delay:-1s;}
+.asset3b_pos .asset_zoom_valentino{-webkit-animation-delay:-1.5s;animation-delay:-1.5s;}
+
+.asset_scale_valentino {-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);}
+
+/*-------------- effect zoom --------------*/
+
+	.asset_zoom{
+		-webkit-animation:zoom 1.5s ease-in-out infinite alternate;
+		animation:zoom 1.5s ease-in-out infinite alternate;
+		-webkit-transform:scale(1.02);
+		-ms-transform:scale(1.02);
+		transform:scale(1.02);}
+
+
+	@-webkit-keyframes zoom{
+
+		to{-webkit-transform:scale(1); transform:scale(1);}
+
+	}
+
+	@keyframes zoom{
+
+		to{-webkit-transform:scale(1); transform:scale(1);}
+
+	}
+
+    .asset_zoom_valentino{
+		-webkit-animation:zoom 1.5s ease-in-out infinite alternate;
+		animation:zoom 1.5s ease-in-out infinite alternate;
+		-webkit-transform:scale(0.99);
+		-ms-transform:scale(0.99);
+		transform:scale(0.99);}
+
+
+	@-webkit-keyframes zoom{
+
+		to{-webkit-transform:scale(1); transform:scale(1);}
+
+	}
+
+	@keyframes zoom{
+
+		to{-webkit-transform:scale(1); transform:scale(1);}
+
+	}
+
+
+
+
 /* RESPONSIVE */
 
 @media (min-width:2561px){
@@ -204,61 +256,7 @@
 }
 
 
-/* ANIMATIONS */
-
-
-.asset1b_pos .asset_zoom{-webkit-animation-delay:-.5s;animation-delay:-.5s;}
-
-.asset1b_pos .asset_zoom_valentino{-webkit-animation-delay:-.5s;animation-delay:-.5s;}
-.asset2b_pos .asset_zoom_valentino{-webkit-animation-delay:-1s;animation-delay:-1s;}
-.asset3b_pos .asset_zoom_valentino{-webkit-animation-delay:-1.5s;animation-delay:-1.5s;}
-
-.asset_scale_valentino {-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);}
-
-
-
-
-	/*-------------- effect zoom --------------*/
-
-	.asset_zoom{
-		-webkit-animation:zoom 1.5s ease-in-out infinite alternate;
-		animation:zoom 1.5s ease-in-out infinite alternate;
-		-webkit-transform:scale(1.02);
-		-ms-transform:scale(1.02);
-		transform:scale(1.02);}
-
-
-	@-webkit-keyframes zoom{
-
-		to{-webkit-transform:scale(1); transform:scale(1);}
-
-	}
-
-	@keyframes zoom{
-
-		to{-webkit-transform:scale(1); transform:scale(1);}
-
-	}
-
-    .asset_zoom_valentino{
-		-webkit-animation:zoom 1.5s ease-in-out infinite alternate;
-		animation:zoom 1.5s ease-in-out infinite alternate;
-		-webkit-transform:scale(0.99);
-		-ms-transform:scale(0.99);
-		transform:scale(0.99);}
-
-
-	@-webkit-keyframes zoom{
-
-		to{-webkit-transform:scale(1); transform:scale(1);}
-
-	}
-
-	@keyframes zoom{
-
-		to{-webkit-transform:scale(1); transform:scale(1);}
-
-	}
+/* ANIMATIONS RESPONSIVE */
 
 
     @media (max-width:600px) {

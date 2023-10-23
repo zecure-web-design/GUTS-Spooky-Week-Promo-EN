@@ -87,6 +87,7 @@ background: var(--green-hover-color);
 }
 
 /*HEADER*/
+
 .header-container{
 background: url(../../assets/images/navbar/nav-bar-background-2560px.png) center top;
 background-repeat: no-repeat;
@@ -253,6 +254,98 @@ border: 1px solid #04bf68;
 display: none;
 }
 
+/* BACKGROUND */
+
+#wizard-bg-container{
+  top: 50px;
+  width: auto;
+  height: auto;
+  position: relative;
+  background: none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  pointer-events:none;
+  z-index: 0;
+}
+#sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBg_confetti, #sceneBG_flying_assets, #sceneBG_witch_375px{
+  max-width:unset;
+  height: auto;
+  position: absolute;
+  z-index:0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+#sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
+  width: 2560px;
+  height: auto;
+}
+#sceneBG_large, #sceneBG_confetti_375px, #sceneBG_coins_375px, #sceneBG_flying_assets_375px, #sceneBG_witch_375px, #sceneBG_confetti_600px, #sceneBG_confetti_1280px{
+  display: none;
+}
+.asset1b_pos, .asset2b_pos, .asset3b_pos{
+  position: absolute;
+  left: 50%;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.asset1b_pos, .asset2b_pos, .asset3b_pos{
+  top: 0px;	
+  margin-left: 0;
+}
+.asset2b_pos{
+  z-index: 0;
+}
+
+/* ANIMATIONS */
+
+.asset1b_pos .asset_zoom{-webkit-animation-delay:-.5s;animation-delay:-.5s;}
+
+.asset1b_pos .asset_zoom_valentino{-webkit-animation-delay:-.5s;animation-delay:-.5s;}
+.asset2b_pos .asset_zoom_valentino{-webkit-animation-delay:-1s;animation-delay:-1s;}
+.asset3b_pos .asset_zoom_valentino{-webkit-animation-delay:-1.5s;animation-delay:-1.5s;}
+
+.asset_scale_valentino {-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1);}
+
+/*-------------- effect zoom --------------*/
+
+.asset_zoom{
+  -webkit-animation:zoom 1.5s ease-in-out infinite alternate;
+  animation:zoom 1.5s ease-in-out infinite alternate;
+  -webkit-transform:scale(1.02);
+  -ms-transform:scale(1.02);
+  transform:scale(1.02);}
+
+@-webkit-keyframes zoom{
+  to{-webkit-transform:scale(1); transform:scale(1);}
+}
+
+@keyframes zoom{
+  to{-webkit-transform:scale(1); transform:scale(1);}
+}
+  .asset_zoom_valentino{
+  -webkit-animation:zoom 1.5s ease-in-out infinite alternate;
+  animation:zoom 1.5s ease-in-out infinite alternate;
+  -webkit-transform:scale(0.99);
+  -ms-transform:scale(0.99);
+  transform:scale(0.99);}
+
+@-webkit-keyframes zoom{
+  to{-webkit-transform:scale(1); transform:scale(1);}
+}
+
+@keyframes zoom{
+  to{-webkit-transform:scale(1); transform:scale(1);}
+}
+
 .mainDiv {
 width: 100%;
 /* height: 75vw; */
@@ -269,6 +362,7 @@ background-image: linear-gradient(180deg, #54035f, #860968);
     z-index: 5;
 }
 
+/*
 
 .overlay-video{
 display: block;
@@ -280,6 +374,9 @@ display: none;
 #video-bg-475{
 display: none;
 }
+
+*/
+
 #logo{
     position: absolute;
     top: 7vw;
@@ -370,8 +467,198 @@ font-weight: 600;
 text-transform: uppercase;
 }
 
+/* CALENDAR */
+
+.calendar-content{
+  margin-top: 25px;
+  padding: 25px;
+}
+.first-line-calendar{
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  column-gap: 25px;
+  margin-bottom: 25px;
+}
+.second-line-calendar{
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  column-gap: 25px;
+  margin-bottom: 25px;
+}
+
+/* INFO BOXES */
+
+a.box-link {
+  text-decoration: underline;
+  color: #2B69D5;
+}
+a.box-link:hover{
+  text-decoration: none;
+  color: #676767;
+}
+.steps-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 43vw;
+    flex-direction: column;
+    }
+#october-26-box h3.date-title{
+  color: #c12dba;
+}
+#october-27-box h3.date-title{
+  color: #e54885;
+}
+#october-28-box h3.date-title{
+  color: #a22edf;
+}
+#october-29-box h3.date-title{
+  color: #0e70d5;
+}
+#october-30-box h3.date-title{
+  color: #0ceed9;
+}
+#october-31-box h3.date-title{
+  color: #f6ad00;
+}
+#november-01-box h3.date-title{
+  color: #94ca1e;
+}
+#november-02-box h3.date-title{
+  color: #b9d31c;
+}
+
+    .step-single-container-01{
+    background: url(../images/steps/step-01-bg-potion.png);
+    background-size: cover;
+    background-position: center center;
+    width: 42vw;
+    height: 13vw;
+    }
+  .step-single-container-03{
+    background: url(../images/steps/step-03-bg-potion.png);
+    background-size: cover;
+    background-position: center center;
+    width: 42vw;
+    height: 13vw;
+    }
+  .step-single-container-05{
+    background: url(../images/steps/step-05-bg-potion.png);
+    background-size: cover;
+    background-position: center center;
+    width: 42vw;
+    height: 13vw;
+    }
+  .step-single-container-07{
+    background: url(../images/steps/step-07-bg-potion.png);
+    background-size: cover;
+    background-position: center center;
+    width: 42vw;
+    height: 13vw;
+    }
+    .steps-odd h3.date-title{
+      font-size: 1.5vw;
+      line-height: 2vw;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding-left: 15vw;
+      padding-top: 3.5vw;
+      text-align: left;
+      color: #000000;
+      }
+
+    .steps-odd h3{
+    font-size: 1.5vw;
+    line-height: 2vw;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-left: 15vw;
+    /* padding-top: 3.5vw; */
+    padding-top: 0;
+    text-align: left;
+    color: #000000;
+    }
+    .steps-odd ul{
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15vw;
+    padding-right: 0;
+    padding-top: 1vw;
+    font-size: 1vw;
+    text-align: left;
+    color: #000000;
+    }
+
+    .step-single-container-02{
+      background: url(../images/steps/step-02-bg-potion.png);
+      background-size: cover;
+      background-position: center center;
+      width: 42vw;
+      height: 13vw;
+      }
+    .step-single-container-04{
+      background: url(../images/steps/step-04-bg-potion.png);
+      background-size: cover;
+      background-position: center center;
+      width: 42vw;
+      height: 13vw;
+      }
+    .step-single-container-06{
+      background: url(../images/steps/step-06-bg-potion.png);
+      background-size: cover;
+      background-position: center center;
+      width: 42vw;
+      height: 13vw;
+      }
+    .step-single-container-08{
+      background: url(../images/steps/step-08-bg-potion.png);
+      background-size: cover;
+      background-position: center center;
+      width: 42vw;
+      height: 13vw;
+      }
+
+      .steps-even h3.date-title{
+        font-size: 1.5vw;
+        line-height: 2vw;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding-left: 6vw;
+        padding-top: 3.5vw;
+        text-align: left;
+        color: #000000;
+        }
+    .steps-even h3{
+      font-size: 1.5vw;
+      line-height: 2vw;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding-left: 6vw;
+      /* padding-top: 3.5vw; */
+      padding-top: 0;
+      text-align: left;
+      color: #000000;
+      }
+    .steps-even ul{
+      list-style-type: disc;
+      display: flex;
+      flex-direction: column;
+      padding-left: 6vw;
+      padding-right: 15vw;
+      padding-top: 1vw;
+      font-size: 1vw;
+      text-align: left;
+      color: #000000;
+      }
 
 /* STEPS BOXES */
+
+/*
 
 .steps-container{
 display: flex;
@@ -458,12 +745,22 @@ background-color: #000000;
 display: none;
 }
 
+*/
 
 /* MEDIA QUERIES */
 
 /* MIN WIDTH 2561 */
 
 @media (min-width:2561px) {
+  
+  /* BACKGROUND */
+
+  #sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
+    width: 2560px;
+}
+
+
+
   .mainDiv{
     margin-top: -100px;
   }
@@ -474,12 +771,12 @@ display: none;
     position: relative;
     top: 0;
     padding: 0 0 0px 0;
-    margin: 120px 0 0px -15vw;
+    margin: 170px 0 0px -15vw;
     justify-content: center;
   }
   #logo .pinata-logo{
-    width: 500px;
-    margin-left: 60px;
+    width: 600px;
+    margin-left: 130px;
   }
   #subtitle{
     position: relative;
@@ -510,6 +807,60 @@ display: none;
     font-size: 40px;
     line-height: 44px;
   }
+
+  /* INFO BOXES */
+
+  .steps-container{
+    position: relative;
+    top: 0;
+    margin: 25px auto;
+  }
+  .steps-odd{
+    margin: 0 auto;
+    width: 900px;
+    height: 290px;
+  }
+  .steps-odd h3.date-title{
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 220px;
+    padding-top: 70px;
+  }
+  .steps-odd h3{
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 220px;
+    /* padding-top: 85px; */
+  }
+  .steps-odd ul{
+    font-size: 24px;
+    line-height: 32px;
+    padding: 20px 0px 0 220px;
+  }
+  .steps-even{
+    margin: 0 auto;
+    width: 900px;
+    height: 290px;
+  }
+  .steps-even h3.date-title{
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 220px;
+    padding-top: 70px;
+  }
+  .steps-even h3{
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 220px;
+    /* padding-top: 85px; */
+  }
+  .steps-even ul{
+    font-size: 24px;
+    line-height: 32px;
+    padding: 20px 0px 0 220px;
+  }
+
+
   .dont-miss-the-fun-container{
     position: relative;
     top: 0;
@@ -527,6 +878,14 @@ display: none;
 
 /*MAX WIDTH 2560PX*/
 @media (max-width:2560px){
+
+/*BACKGROUND*/
+#sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
+  width: 2560px;
+}
+
+
+
 .mainDiv{
   /* height: 1800px; */
   margin-top: -100px;
@@ -549,12 +908,12 @@ display: none;
   position: relative;
   top: 0;
   padding: 0 0 0px 0;
-  margin: 120px 0 0px -15vw;
+  margin: 180px 0 0px -15vw;
   justify-content: center;
 }
 #logo .pinata-logo{
-  width: 500px;
-  margin-left: 60px;
+  width: 550px;
+  margin-left: 130px;
 }
 #subtitle{
   position: relative;
@@ -585,6 +944,61 @@ display: none;
   font-size: 40px;
   line-height: 44px;
 }
+
+/* INFO BOXES */
+
+.steps-container{
+  position: relative;
+  top: 0;
+  margin: 25px auto;
+}
+.steps-odd{
+  margin: 0 auto;
+  width: 900px;
+  height: 290px;
+}
+.steps-odd h3.date-title{
+  font-size: 30px;
+  line-height: 34px;
+  padding-left: 220px;
+  padding-top: 70px;
+}
+.steps-odd h3{
+  font-size: 30px;
+  line-height: 34px;
+  padding-left: 220px;
+  /* padding-top: 85px; */
+}
+.steps-odd ul{
+  font-size: 24px;
+  line-height: 32px;
+  padding: 20px 0px 0 220px;
+}
+
+.steps-even{
+  margin: 0 auto;
+  width: 900px;
+  height: 290px;
+}
+.steps-even h3.date-title{
+  font-size: 30px;
+  line-height: 34px;
+  padding-left: 220px;
+  padding-top: 70px;
+}
+.steps-even h3{
+  font-size: 30px;
+  line-height: 34px;
+  padding-left: 220px;
+  /* padding-top: 85px; */
+}
+.steps-even ul{
+  font-size: 24px;
+  line-height: 32px;
+  padding: 20px 0px 0 220px;
+}
+
+/*
 .steps-container{
   position: relative;
   top: 0;
@@ -622,6 +1036,8 @@ display: none;
   line-height: 32px;
   padding: 20px 0px 0 120px;
 }
+
+*/
 .dont-miss-the-fun-container{
   position: relative;
   top: 0;
@@ -657,10 +1073,19 @@ display: none;
 
 
 @media (max-width:1920px){
-.mainDiv{
-  /* height: 1400px; */
+/* BACKGROUND */
+
+#sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
+  width: 1920px;
 }
-.video-background{
+#sceneBG_confetti{
+  width: 2100px;
+}
+
+/* .mainDiv{
+  height: 1400px;
+} */
+/* .video-background{
   position: absolute;
   z-index: -10;
   top: 60px;
@@ -670,7 +1095,7 @@ display: none;
   overflow: hidden;
   clip-path: 0 0;
   transform: translateZ(0); 
-}
+} */
 .content-container{
   z-index: 10;
 }
@@ -678,11 +1103,12 @@ display: none;
   position: relative;
   top: 0;
   padding: 0 0 0px 0;
-  margin: 80px 0 0px -15vw;
+  margin: 100px 0 0px -15vw;
   justify-content: center;
 }
 #logo .pinata-logo{
-  width: 380px;
+  width: 430px;
+  margin-left: 120px;
 }
 #subtitle{
   position: relative;
@@ -712,6 +1138,61 @@ display: none;
   font-size: 32px;
   line-height: 36px;
 }
+
+/* INFO BOXES */
+
+.steps-container{
+  position: relative;
+  top: 0;
+  margin: 20px auto;
+}
+.steps-odd{
+  margin: 0 auto;
+  width: 806px;
+  height: 250px;
+}
+.steps-odd h3.date-title{
+  font-size: 26px;
+  line-height: 30px;
+  padding-left: 220px;
+  padding-top: 60px;
+}
+.steps-odd h3{
+  font-size: 26px;
+  line-height: 30px;
+  padding-left: 220px;
+  /* padding-top: 70px; */
+}
+.steps-odd ul{
+  font-size: 20px;
+  line-height: 26px;
+  padding: 20px 0px 0 220px;
+}
+
+.steps-even{
+  margin: 0 auto;
+  width: 806px;
+  height: 250px;
+}
+.steps-even h3.date-title{
+  font-size: 26px;
+  line-height: 30px;
+  padding-left: 220px;
+  padding-top: 60px;
+}
+.steps-even h3{
+  font-size: 26px;
+  line-height: 30px;
+  padding-left: 220px;
+  /* padding-top: 70px; */
+}
+.steps-even ul{
+  font-size: 20px;
+  line-height: 26px;
+  padding: 20px 0px 0 220px;
+}
+
+/*
 .steps-container{
   position: relative;
   top: 0;
@@ -749,6 +1230,9 @@ display: none;
   line-height: 26px;
   padding: 20px 0px 0 120px;
 }
+
+*/
+
 .dont-miss-the-fun-container{
   position: relative;
   top: 0;
@@ -762,17 +1246,31 @@ display: none;
 
 /* MAX WIDTH 1600PX */
 @media (max-width:1600px){
-.mainDiv{
-  /* height: 1300px; */
+/* BACKGROUND */
+
+#sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
+  width: 1600px;
 }
-.video-background{
+#sceneBG_witch{
+  margin-top: 40px;
+}
+#sceneBG_confetti{
+  width: 1920px;
+}
+
+
+/* .mainDiv{
   height: 1300px;
-}
+} */
+/* .video-background{
+  height: 1300px;
+} */
 #logo{
   margin-top: 120px;
 }
 #logo .pinata-logo{
-  width: 320px;
+  width: 380px;
+  margin-left: 85px;
 }
 #subtitle h3{
   font-size: 34px;
@@ -801,6 +1299,22 @@ display: none;
 }
 .nav-logo-middle-wrapper{
   display: none;
+}
+/* BACKGROUND */
+
+#sceneBG_witch{
+  width: 1500px;
+  margin-top: -40px;
+}
+#sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
+  width: 1280px;
+}
+#sceneBG_confetti{
+  display: none;
+}
+#sceneBG_confetti_1280px{
+  display: block;
+  width: 1280px;
 }
 
 /*CONTENT*/
@@ -845,6 +1359,7 @@ display: none;
 }
 #logo .pinata-logo{
   width: 300px;
+  margin-left: 70px;
 }
 #subtitle{
   position: relative;
@@ -877,6 +1392,111 @@ display: none;
   font-size: 20px;
   line-height: 24px;
 }
+
+/* INFO BOXES */
+
+.steps-container{
+  position: relative;
+  top: 0;
+  margin: 20px auto;
+}
+.step-single-container-01{
+  width: 550px;
+  height: 250px;
+  margin: 0 auto;
+  background: url(../images/steps/step-01-bg-1200px-potion.png);
+  background-size: cover;
+}
+.step-single-container-03{
+  width: 550px;
+  height: 250px;
+  margin: 0 auto;
+  background: url(../images/steps/step-03-bg-1200px-potion.png);
+  background-size: cover;
+}
+.step-single-container-05{
+  width: 550px;
+  height: 250px;
+  margin: 0 auto;
+  background: url(../images/steps/step-05-bg-1200px-potion.png);
+  background-size: cover;
+}
+.step-single-container-07{
+  width: 550px;
+  height: 250px;
+  margin: 0 auto;
+  background: url(../images/steps/step-07-bg-1200px-potion.png);
+  background-size: cover;
+}
+.steps-odd h3.date-title{
+  font-size: 18px;
+  line-height: 22px;
+  padding-top: 65px;
+  padding-left: 180px;
+}
+.steps-odd h3{
+  font-size: 18px;
+  line-height: 22px;
+  /* padding-top: 75px; */
+  padding-left: 180px;
+}
+.steps-odd ul{
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 180px;
+  padding-top: 15px;
+  padding-right: 40px;
+}
+
+.step-single-container-02{
+  width: 550px;
+  height: 250px;
+  margin: 0 auto;
+  background: url(../images/steps/step-02-bg-1200px-potion.png);
+  background-size: cover;
+}
+.step-single-container-04{
+  width: 550px;
+  height: 250px;
+  margin: 0 auto;
+  background: url(../images/steps/step-04-bg-1200px-potion.png);
+  background-size: cover;
+}
+.step-single-container-06{
+  width: 550px;
+  height: 250px;
+  margin: 0 auto;
+  background: url(../images/steps/step-06-bg-1200px-potion.png);
+  background-size: cover;
+}
+.step-single-container-08{
+  width: 550px;
+  height: 250px;
+  margin: 0 auto;
+  background: url(../images/steps/step-08-bg-1200px-potion.png);
+  background-size: cover;
+}
+.steps-even h3.date-title{
+  font-size: 18px;
+  line-height: 22px;
+  padding-top: 65px;
+  padding-left: 100px;
+}
+.steps-even h3{
+  font-size: 18px;
+  line-height: 22px;
+  /* padding-top: 75px; */
+  padding-left: 100px;
+}
+.steps-even ul{
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 100px;
+  padding-top: 15px;
+  padding-right: 150px;
+}
+
+/*
 .steps-container{
   position: relative;
   top: 0;
@@ -922,6 +1542,9 @@ display: none;
   padding-top: 15px;
   padding-right: 200px;
 }
+
+*/
+
 .dont-miss-the-fun-container{
   position: relative;
   top: 0;
@@ -939,6 +1562,34 @@ display: none;
 
 }
 
+/* MAX WIDTH 1024PX */
+
+@media (max-width:1024px){
+/*BACKGROUND*/
+
+#sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
+  width: 1024px;
+}
+#sceneBG_witch{
+  width: 1500px;
+}
+#sceneBG_confetti{
+  display: none;
+  width: 1100px;
+}
+#sceneBG_confetti_600px{
+  display: none;
+  width: 800px;
+}
+
+/* CALENDAR*/
+
+  .first-line-calendar, .second-line-calendar{
+      max-width: 600px;
+      column-gap: 20px;
+  }
+}
+
 /*MAX WIDTH 900PX */
 @media (max-width:900px){
 .navbar-promotions, .navbar-sports, .navbar-live-casino, .navbar-casino{
@@ -952,13 +1603,57 @@ display: none;
 /*MAX WIDTH 768PX */  
 
 @media(max-width:810px){
+
+  /* BACKGROUND */
+
+#sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
+  width: 768px;
+}
+#sceneBG_witch{
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: -25px;
+}
+#sceneBG_coins{
+  width: 950px;
+  margin-top: -30px;
+}
+
+#sceneBG_confetti_600px{
+  display: block;
+  width: 700px;
+}
+#sceneBG_confetti{
+  width: 850px;
+  margin-top: -70px;
+  display: none;
+}
+#sceneBG_confetti_1280px{
+  display: none;
+}
+#sceneBG_flying_assets{
+  width: 850px;
+  margin-top: -50px;
+}
+
+
 .video-background{
   top: 40px;
   height: 1100px;
 }
 #content-container{
-  margin-top: -25px;
+  margin-top: -10px;
 }
+
+/* INFO BOXES */
+
+.steps-container{
+  margin-top: 0;
+}
+.steps-odd, .steps-even{
+  margin-top: -40px;
+}
+
 .how-it-works-container{
   margin-top: 50px;
 }
@@ -973,13 +1668,49 @@ display: none;
 
 @media (max-width:600px){
 
-.mainDiv{
-  /* height: 1200px; */
+/* BACKGROUND */
+
+#sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets{
+  display: none;
 }
+#sceneBG_confetti_600px{
+  display: block;
+  width: 600px;
+}
+#sceneBG_coins_375px{
+  display: block;
+  width: 600px;
+}
+#sceneBG_flying_assets_375px{
+  display: block;
+  width: 600px;
+  margin-top: -50px;
+}
+
+/* ANIMATION */
+.asset_zoom_valentino{
+  -webkit-animation:zoom 3s ease-in-out infinite alternate;
+  animation:zoom 3s ease-in-out infinite alternate;
+  -webkit-transform:scale(0.95);
+  -ms-transform:scale(0.95);
+  transform:scale(0.95);}
+
+@-webkit-keyframes zoom{
+  to{-webkit-transform:scale(0.96); transform:scale(0.96);}
+}
+
+@keyframes zoom{
+  to{-webkit-transform:scale(0.96); transform:scale(0.96);}
+}
+
+
+/* .mainDiv{
+  height: 1200px;
+} */
 #content-container{
   margin-top: 0;
 }
-.video-background{
+/* .video-background{
   position: absolute;
   z-index: -10;
   top: 60px;
@@ -990,8 +1721,8 @@ display: none;
   overflow: hidden;
   clip-path: 0 0;
   transform: translatez(0);
-}
-.overlay-video{
+} */
+/* .overlay-video{
   transform: translatez(0);
   position: absolute;
   top: -100%;
@@ -1001,13 +1732,13 @@ display: none;
   margin: auto;
   min-width: 600px;
   min-height: 1100px;
-}
-#video-bg-800{
+} */
+/* #video-bg-800{
   display: block;
-}
-#video-bg-1920{
+} */
+/* #video-bg-1920{
   display: none;
-}
+} */
 #logo{
   position: relative;
   top: 0;
@@ -1021,6 +1752,7 @@ display: none;
 }
 #logo .pinata-logo{
   width: 250px;
+  margin-left: 50px;
 }
 #subtitle{
   position: relative;
@@ -1029,7 +1761,7 @@ display: none;
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 0;
 }
 #subtitle h3{
   font-size: 30px;
@@ -1086,6 +1818,147 @@ display: none;
   font-weight: 600;
   text-transform: uppercase;
 }
+
+/* CALENDAR */
+
+.first-line-calendar, .second-line-calendar{
+      column-gap: 10px;
+  }
+  .calendar-content{
+      margin-top: 30px;
+  }
+
+/* INFO BOXES */
+
+.steps-container{
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+.step-single-container-01{
+  background: url(../images/steps/step-01-bg-600px-breakpoint-potion.png);
+  background-size: cover;
+  background-position: center center;
+  width: 450px;
+  height: 170px;
+}
+.step-single-container-03{
+  background: url(../images/steps/step-03-bg-600px-breakpoint-potion.png);
+  background-size: cover;
+  background-position: center center;
+  width: 450px;
+  height: 170px;
+}
+.step-single-container-05{
+  background: url(../images/steps/step-05-bg-600px-breakpoint-potion.png);
+  background-size: cover;
+  background-position: center center;
+  width: 450px;
+  height: 170px;
+}
+.step-single-container-07{
+  background: url(../images/steps/step-07-bg-600px-breakpoint-potion.png);
+  background-size: cover;
+  background-position: center center;
+  width: 450px;
+  height: 170px;
+}
+.steps-odd h3.date-title{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-left: 100px;
+  padding-top: 35px;
+  text-align: left;
+}
+.steps-odd h3{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-left: 100px;
+  /* padding-top: 35px; */
+  text-align: left;
+}
+.steps-odd ul{
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 20px;
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.step-single-container-02{
+  background: url(../images/steps/step-02-bg-600px-breakpoint-potion.png);
+  background-size: cover;
+  background-position: center center;
+  width: 450px;
+  height: 170px;
+}
+.step-single-container-04{
+  background: url(../images/steps/step-04-bg-600px-breakpoint-potion.png);
+  background-size: cover;
+  background-position: center center;
+  width: 450px;
+  height: 170px;
+}
+.step-single-container-06{
+  background: url(../images/steps/step-06-bg-600px-breakpoint-potion.png);
+  background-size: cover;
+  background-position: center center;
+  width: 450px;
+  height: 170px;
+}
+.step-single-container-08{
+  background:x url(../images/steps/step-08-bg-600px-breakpoint-potion.png);
+  background-size: cover;
+  background-position: center center;
+  width: 450px;
+  height: 170px;
+}
+.steps-even h3.date-title{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-left: 70px;
+  padding-top: 35px;
+  text-align: left;
+}
+.steps-even h3{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-left: 70px;
+  /* padding-top: 45px; */
+  text-align: left;
+}
+.steps-even ul{
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  padding-left: 70px;
+  padding-right: 80px;
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+.steps-odd, .steps-even{
+  margin-top: 0;
+}
+
+/*
 .steps-container{
   position: relative;
   top: 0;
@@ -1149,6 +2022,9 @@ display: none;
   font-size: 16px;
   text-align: left;
 }
+
+*/
+
 .dont-miss-the-fun-container{
   position: relative;
   left: 0;
@@ -1195,15 +2071,48 @@ display: none;
   padding: 10px;
 }
 
-/*CONTENT*/
-.mainDiv{
-  /* height: 2500px !important;  */
+/* BACKGROUND */
+
+#wizard-bg-container{
+  top: 0;
 }
+#sceneBG_large, #sceneBG_coins, #sceneBG_witch, #sceneBG_confetti, #sceneBG_flying_assets, #sceneBG_confetti_600px{
+  display: none;
+}
+#sceneBG_confetti_375px{
+  display: block;
+  width: 475px;
+}
+#sceneBG_coins_375px{
+  width: 475px;
+  margin-top: -50px;
+  display: none;
+}
+#sceneBG_flying_assets_375px{
+  width: 475px;
+  margin-top: -50px;
+  display: none;
+}
+#sceneBG_witch{
+  display: none;
+}
+#sceneBG_witch_375px{
+  display: block;
+  margin-top: 560px;
+  width: 950px;
+  margin-left: -30px;
+}
+
+
+/*CONTENT*/
+/* .mainDiv{
+  height: 2500px !important; 
+} */
 #logo{
   margin-top: 0;
 }
 #logo .pinata-logo{
-  margin-left: 30px;
+  margin-left: 50px;
 }
 #video-bg-800{
   display: none;
@@ -1224,6 +2133,102 @@ display: none;
 .how-it-works-container{
   margin-top: 30px;
 }
+
+/* CALENDAR */
+
+.calendar-content{
+  padding: 15px;
+  margin-top: 15px;
+}
+.first-line-calendar, .second-line-calendar{
+  max-width: 350px;
+  column-gap: 10px;
+}
+
+/* INFO BOXES */
+
+.steps-container{
+  margin-top: 200px;
+}
+.step-single-container-01{
+  width: 350px;
+  height: 200px;
+  background: url(../images/steps/step-01-bg-475px-potion.png);
+  background-size: cover;
+  background-position: center center;
+}
+.step-single-container-03{
+  width: 350px;
+  height: 200px;
+  background: url(../images/steps/step-03-bg-475px-potion.png);
+  background-size: cover;
+  background-position: center center;
+}
+.step-single-container-05{
+  width: 350px;
+  height: 200px;
+  background: url(../images/steps/step-05-bg-475px-potion.png);
+  background-size: cover;
+  background-position: center center;
+}
+.step-single-container-07{
+  width: 350px;
+  height: 200px;
+  background: url(../images/steps/step-07-bg-475px-potion.png);
+  background-size: cover;
+  background-position: center center;
+}
+.steps-odd h3.date-title{
+  padding-top: 35px;
+}
+/* .steps-odd h3{
+  padding-top: 45px;
+} */
+.steps-odd ul{
+  padding-right: 30px;
+}
+.step-single-container-02{
+  width: 350px;
+  height: 200px;
+  background: url(../images/steps/step-02-bg-475px-potion.png);
+  background-size: cover;
+  background-position: center center;
+}
+.step-single-container-04{
+  width: 350px;
+  height: 200px;
+  background: url(../images/steps/step-04-bg-475px-potion.png);
+  background-size: cover;
+  background-position: center center;
+}
+.step-single-container-06{
+  width: 350px;
+  height: 200px;
+  background: url(../images/steps/step-06-bg-475px-potion.png);
+  background-size: cover;
+  background-position: center center;
+}
+.step-single-container-08{
+  width: 350px;
+  height: 200px;
+  background: url(../images/steps/step-08-bg-475px-potion.png);
+  background-size: cover;
+  background-position: center center;
+}
+.steps-even h3.date-title{
+  padding-left: 60px;
+  padding-top: 35px;
+}
+.steps-even h3{
+  padding-left: 60px;
+  /* padding-top: 45px; */
+}
+.steps-even ul{
+  padding-left: 60px;
+  padding-right: 70px;
+}
+
+/*
 .steps-container{
   margin-top: 40px;
 }
@@ -1263,4 +2268,6 @@ display: none;
   background-repeat: no-repeat;
   background-size: 1000px;
 }
+*/
+
 }
